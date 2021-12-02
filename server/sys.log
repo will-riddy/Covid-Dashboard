@@ -1,0 +1,259 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+WARNING:root:Covid data not accessed yet
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:20] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:21] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:root:Schedeuled Event: 13:47, test covid data Repeat
+INFO:root:Schedeuled Event: 13:47, test news data Repeat
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:33] "GET /index?alarm=13%3A47&two=test&repeat=repeat&covid-data=covid-data&news=news HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:34] "GET /index?alarm_item=test+-+Covid+Data+Repeat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:34] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:root:Schedeuled Event: 13:51, asd covid data 
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:40] "GET /index?alarm=13%3A51&two=asd&covid-data=covid-data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:40] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:43] "GET /index?notif=UK+Covid+live%3A+minister+casts+doubt+on+wisdom+of+holding+big+Christmas+parties+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:43] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:44] "GET /index?notif=COVID-19%3A+Reinfections+rise+in+South+Africa+but+people+becoming+less+sick+-+WHO+deploys+surge+team+amid+Omicron+outbreak+-+Sky+News HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:44] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:45] "GET /index?notif=Live+Covid+latest+news%3A+%27Trigger%27+of+blood+clots+with+AstraZeneca+jab+found+by+scientists+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:45] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:46] "GET /index?notif=New+Covid+drug+Sotrovimab+approved+in+UK+and+maker+says+it+works+against+Omicron+-+Birmingham+Live HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:46] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:47] "GET /index?notif=Ad+boss+Martin+Sorrell+criticises+lack+of+masks+guidance+as+events+cancelled+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:47] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:47] "GET /index?notif=UK+%27standing+ready%27+to+vaccinate+five+to+11-year-olds+against+Covid+-+Daily+Mail HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:47] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:48] "GET /index?notif=FTSE+100+Live+02+December%3A+OPEC+ministers+Omicron+response%2C+Brent+crude+futures%2C+oil+price%2C+oil+supply+and+demand%2C+stock+market+Covid+sentiment%2C+AJ+Bell+-+Evening+Standard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:48] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:49] "GET /index?notif=Pregnant+women+fear+losing+jobs+over+Covid+safety+worries%2C+survey+finds+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:46:49] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:47:51] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:47:51] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:48:51] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:48:51] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:49:51] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:49:51] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:50:51] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:50:51] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+ERROR:website:Exception on /index [GET]
+Traceback (most recent call last):
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\willi\Documents\Programming\Covid_Dashboard\server\website.py", line 91, in index
+  File "C:\Users\willi\AppData\Local\Programs\Python\Python39\lib\sched.py", line 151, in run
+    action(*argument, **kwargs)
+TypeError: schedule_covid_updates() got multiple values for argument 'nation'
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:51:51] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:04] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:root:Schedeuled Event: 13:01, test covid data 
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:27] "GET /index?alarm=13%3A01&two=test&covid-data=covid-data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:28] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:34] "GET /index?alarm_item=test+-+Covid+Data+ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:34] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:root:Schedeuled Event: 14:01, test covid data 
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:41] "GET /index?alarm=14%3A01&two=test&covid-data=covid-data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 13:59:41] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:00:41] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:00:41] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:01:42] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:01:42] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:02:42] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:02:42] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:root:Schedeuled Event: 14:04, test covid data 
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:16] "GET /index?alarm=14%3A04&two=test&covid-data=covid-data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:16] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:root:Schedeuled Event: 14:09, yo news data 
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:23] "GET /index?alarm=14%3A09&two=yo&news=news HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:23] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:25] "GET /index?notif=UK+Covid+live%3A+minister+casts+doubt+on+wisdom+of+holding+big+Christmas+parties+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:25] "GET /index?notif=COVID-19%3A+Reinfections+rise+in+South+Africa+but+people+becoming+less+sick+-+WHO+deploys+surge+team+amid+Omicron+outbreak+-+Sky+News HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "GET /index?notif=Live+Covid+latest+news%3A+%27Trigger%27+of+blood+clots+with+AstraZeneca+jab+found+by+scientists+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "GET /index?notif=New+Covid+drug+Sotrovimab+approved+in+UK+and+maker+says+it+works+against+Omicron+-+Birmingham+Live HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "GET /index?notif=Ad+boss+Martin+Sorrell+criticises+lack+of+masks+guidance+as+events+cancelled+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:26] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:27] "GET /index?notif=UK+%27standing+ready%27+to+vaccinate+five+to+11-year-olds+against+Covid+-+Daily+Mail HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:27] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:29] "GET /index?notif=FTSE+100+Live+02+December%3A+OPEC+ministers+Omicron+response%2C+Brent+crude+futures%2C+oil+price%2C+oil+supply+and+demand%2C+stock+market+Covid+sentiment%2C+AJ+Bell+-+Evening+Standard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:29] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:29] "GET /index?notif=Pregnant+women+fear+losing+jobs+over+Covid+safety+worries%2C+survey+finds+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:03:29] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:04:30] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:04:30] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:05:30] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:05:30] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:06:30] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:06:30] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:07:31] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:07:31] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:08:31] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:08:31] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:09:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:09:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:10:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:10:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:11:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:11:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:12:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:12:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:13:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:13:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:14:33] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:14:33] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:root:Schedeuled Event: 14:20, asd covid data Repeat
+INFO:root:Schedeuled Event: 14:20, asd news data Repeat
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:22] "GET /index?alarm=14%3A20&two=asd&repeat=repeat&covid-data=covid-data&news=news HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:22] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:23] "GET /index?alarm_item=asd+-+News+Data+Repeat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:23] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:24] "GET /index?alarm_item=asd+-+News+Data+Repeat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:15:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:16:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:16:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:17:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:17:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:18:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:18:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:19:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:19:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:20:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:20:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:21:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:21:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:22:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:22:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:23:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:23:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:24:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:24:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:25:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:25:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:26:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:26:24] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:27:24] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:27:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:28:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:28:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:29:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:29:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:30:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:30:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:31:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:31:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:32:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:32:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:33:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:33:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:34:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:34:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:35:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:35:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:36:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:36:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:37:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:37:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:38:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:38:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:39:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:39:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:40:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:40:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:41:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:41:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:42:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:42:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:43:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:43:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:44:25] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:44:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
