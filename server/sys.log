@@ -257,3 +257,44 @@ INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:43:25] "GET /index HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:43:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:44:25] "GET /index HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 14:44:25] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 46
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:32] "GET /static/images/mike.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 46
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:57] "GET /index?notif=UK+Covid+live%3A+PM+says+people+should+not+cancel+Christmas+events+after+highest+cases+since+17+July+recorded+-+The+Guardian HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 46
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-02&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:57] "GET /index?notif=Germany+could+make+Covid+vaccination+mandatory%2C+says+Merkel+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:57] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:58] "GET /index?notif=UK+Covid+live%3A+PM+says+people+should+not+cancel+Christmas+events+after+highest+cases+since+17+July+recorded+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:22:58] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:00] "GET /index?notif=Germany+could+make+Covid+vaccination+mandatory%2C+says+Merkel+-+The+Guardian HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:00] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:00] "GET /index?notif=13+health+warning+signs+on+tongue+you+must+not+ignore+–+including+Covid+symptom+-+Mirror.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:00] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:01] "GET /index?notif=Live+Covid+latest+news%3A+%27Trigger%27+of+blood+clots+with+AstraZeneca+jab+found+by+scientists+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Dec/2021 18:23:01] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -

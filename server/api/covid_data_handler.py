@@ -96,6 +96,7 @@ def process_covid_dic(covid_dic_data : dict) -> tuple[float, float, float]:
     deaths_total = None
     hospital_cases = None
     not_found_hospital = True
+    day_rate_count = 0
     for i, data in enumerate(covid_dic_data):
         if covid_dic_data[data]['hospitalCases'] is not None and not_found_hospital:
             hospital_cases = covid_dic_data[data]['hospitalCases']
@@ -103,13 +104,14 @@ def process_covid_dic(covid_dic_data : dict) -> tuple[float, float, float]:
         # skips first day because the first day is incomplete
         if i > 0 and i < 8:
             seven_day_cases += covid_dic_data[data]['newCasesBySpecimenDate']
+            day_rate_count += 1
 
         if covid_dic_data[data]['cumDailyNsoDeathsByDeathDate'] is not None and not_found_deaths:
             deaths_total = covid_dic_data[data]['cumDailyNsoDeathsByDeathDate']
             not_found_deaths = False
         
 
-    seven_day_rate = round(seven_day_cases / 7, 1)
+    seven_day_rate = round(seven_day_cases / day_rate_count, 1)
     return seven_day_rate, hospital_cases, deaths_total
 
 # returns data at given time interval

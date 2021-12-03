@@ -4,7 +4,6 @@
     "NATION": "England",
     "TITLE": "Covid Dashboard",
     "IMAGE": "mike.jpg",
-    "API_KEY": "41aef64dfdbd4d9e9d7fe05d58c6ea02",
     "LOCATION_NEWS": "gb",
     "SEARCH_TERMS": "Covid COVID-19 coronavirus",
     "LOGGING_PATH": "sys.log"

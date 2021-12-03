@@ -11,6 +11,7 @@ setuptools.setup(
     description="A dashboard that shows you covid data about a speficic area",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    url='https://github.com/will-riddy/Covid-Dashboard',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
