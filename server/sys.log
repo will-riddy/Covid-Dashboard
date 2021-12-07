@@ -487,3 +487,33 @@ INFO:werkzeug:127.0.0.1 - - [06/Dec/2021 14:19:58] "[36mGET /static/images/mike
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+WARNING:root:Covid data not accessed yet
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dltla%3BareaName%3DExeter&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.coronavirus.data.gov.uk:443
+DEBUG:urllib3.connectionpool:https://api.coronavirus.data.gov.uk:443 "GET /v1/data?filters=areaType%3Dnation%3BareaName%3DEngland&structure=%7B%22areaName%22%3A%22areaName%22%2C%22areaCode%22%3A%22areaCode%22%2C%22areaType%22%3A%22areaType%22%2C%22date%22%3A%22date%22%2C%22cumDailyNsoDeathsByDeathDate%22%3A%22cumDailyNsoDeathsByDeathDate%22%2C%22hospitalCases%22%3A%22hospitalCases%22%2C%22newCasesBySpecimenDate%22%3A%22newCasesBySpecimenDate%22%7D&format=json&page=2 HTTP/1.1" 204 0
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:29] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:29] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=covid-19&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): newsapi.org:443
+DEBUG:urllib3.connectionpool:https://newsapi.org:443 "GET /v2/top-headlines?q=coronavirus&from=2021-12-07&sortBy=popularity&country=gb&apiKey=41aef64dfdbd4d9e9d7fe05d58c6ea02 HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:32] "GET /index?notif=Coronavirus+latest+news%3A+UK%27s+omicron+Covid+cases+could+surpass+red+list+countries+in+matter+of+days%2C+warns+expert+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:32] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:34] "GET /index?notif=Coronavirus+latest+news%3A+UK%27s+omicron+Covid+cases+could+surpass+red+list+countries+in+matter+of+days%2C+warns+expert+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:34] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:35] "GET /index?notif=Nearly+all+children+have+fallen+behind+because+of+Covid%2C+Ofsted+warns+-+Telegraph.co.uk HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Dec/2021 14:35:35] "[36mGET /static/images/mike.jpg HTTP/1.1[0m" 304 -
