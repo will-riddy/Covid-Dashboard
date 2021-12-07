@@ -1,15 +1,15 @@
-##
-Requirements Python >= 3.8
+## Requirements
+Python >= 3.8
 ## Required Packages
-flask
-ukcovid-19
-datetime
-pytest
+flask  
+ukcovid-19  
+datetime  
+pytest  
 ## Running the program
-Run the `__init__.py` file in the server directory
+Run the `__init__.py` file in the /server directory
 ## Config and api_key files
-Please replace the api key with an api key from https://newsapi.org
-The search terms for the news api must have a space inbetween each term
+Please replace the api key with an api key from https://newsapi.org  
+The search terms for the news api must have a space inbetween each term  
 ## Project Tree
 ```
 │   api_key.json
