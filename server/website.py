@@ -1,8 +1,8 @@
 '''Web server'''
 
 from flask import Flask, render_template, request
-import api.covid_data_handler as covid_data_handler
-import api.covid_news_handling as covid_news_handling
+import server.api.covid_data_handler as covid_data_handler
+import server.api.covid_news_handling as covid_news_handling
 import sched, time, datetime, logging, os
 
 logging.basicConfig(filename=os.environ['LOGGING_PATH'], level=logging.DEBUG, encoding='utf-8')
@@ -92,7 +92,7 @@ def main() -> None:
 @app.route('/index')
 def index() -> None:
 
-    '''INdex webpage'''
+    '''Index webpage'''
 
     global schedule_queue
     global previous_queue

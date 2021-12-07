@@ -127,4 +127,4 @@ def schedule_covid_updates(time : float = None, nation : str = NATION) -> None:
 covid_data_all = None
 
 if '__main__' == __name__:
-    print(covid_API_request())
+    covid_API_request()

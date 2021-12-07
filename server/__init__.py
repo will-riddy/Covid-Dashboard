@@ -18,5 +18,5 @@ def config_to_environ() -> None:
 
 config_to_environ()
 
-import website
-website.app.run()
+import server.website
+server.website.app.run()
